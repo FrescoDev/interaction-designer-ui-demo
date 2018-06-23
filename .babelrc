@@ -1,0 +1,32 @@
+{
+  "presets": [
+    "react",
+    "stage-2",
+    [
+      "env",
+      {
+        "useBuiltIns": "entry",
+        "targets": {
+          "browsers": [
+            "last 2 versions"
+          ],
+          "uglify": true
+        }
+      }
+    ]
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-async-to-generator",
+    "transform-regenerator",
+    "transform-class-properties",
+    [
+      "styled-jsx/babel",
+      {
+        "plugins": [
+          "styled-jsx-plugin-sass"
+        ]
+      }
+    ]
+  ]
+}
